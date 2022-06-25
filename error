@@ -1,0 +1,74 @@
+{
+    "meta": {
+        "version": "2.8.20",
+        "build": 1656191697
+    },
+    "pods": [
+        {
+            "name": "libro",
+            "id": 301,
+            "label": "libros",
+            "description": "",
+            "type": "post_type",
+            "storage": "meta",
+            "label_singular": "libro",
+            "public": "1",
+            "show_ui": "1",
+            "rest_enable": "1",
+            "supports_title": "1",
+            "supports_editor": "1",
+            "_migrated_28": "1",
+            "required": "0",
+            "capability_type": "post",
+            "groups": [
+                {
+                    "name": "mas_campos",
+                    "id": 302,
+                    "label": "M\u00e1s campos",
+                    "description": "",
+                    "weight": 0,
+                    "fields": [
+                        {
+                            "name": "la_galeria",
+                            "id": 303,
+                            "label": "la galeria",
+                            "description": "asaa",
+                            "weight": 0,
+                            "type": "file",
+                            "sister_id": "-- Selecciona uno --",
+                            "required": "1",
+                            "file_format_type": "multi",
+                            "file_uploader": "attachment",
+                            "file_attachment_tab": "upload",
+                            "file_upload_dir": "wp",
+                            "file_edit_title": "1",
+                            "file_show_edit_link": "0",
+                            "file_linked": "0",
+                            "file_limit": "0",
+                            "file_type": "images",
+                            "file_field_template": "rows",
+                            "file_add_button": "A\u00f1adir archivo",
+                            "file_modal_title": "Inclu\u00edr un archivo",
+                            "file_modal_add_button": "A\u00f1adir archivo",
+                            "roles_allowed": "administrator",
+                            "rest_pick_response": "array",
+                            "rest_pick_depth": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "templates": [
+        {
+            "name": "simple",
+            "code": "{@la_galeria._img.thumbnail}",
+            "id": 305,
+            "_edit_last": "1",
+            "_edit_lock": "1656191529:1",
+            "pod_reference": {
+                "pod": "libro"
+            }
+        }
+    ]
+}
